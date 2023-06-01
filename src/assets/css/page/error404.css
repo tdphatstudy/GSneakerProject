@@ -1,0 +1,23 @@
+.error-not-found-wrapper {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 50px 0;
+}
+.error-not-found-wrapper > span {
+    font-size: 80px;
+    font-weight: bold;
+    background: linear-gradient(45deg, #50C549, #24B0DF);
+    color: transparent;
+    background-clip: text;
+}
+.error-not-found-wrapper > div {
+    font-size: 24px;
+    font-weight: bold;
+}
+.error-not-found-wrapper > p {
+    font-size: 18px;
+}
