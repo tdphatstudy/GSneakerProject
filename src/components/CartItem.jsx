@@ -9,7 +9,7 @@ const CartItem = ({item, minusCallback, plusCallback, removeCallback}) => {
             </div>
             <div className="body">
                 <div className="item-name">{item.name}</div>
-                <div className="item-price">{item.price}</div>
+                <div className="item-price">{item.price.toLocaleString('en-US', { style: 'currency', currency: 'USD' })}</div>
                 <div className="item-func-wrapper">
                     <div className="amount-func">
                         <div className="minus" onClick={() => {minusCallback(item.id)}}></div>

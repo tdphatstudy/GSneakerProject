@@ -7,6 +7,7 @@ import CartItem from '../components/CartItem';
 const ShoppingCart = () => {
     const [products, setProducts] = useState(dummyData.shoes);
     const [cart, setCart] = useState([]);
+    const [totalPrice, setTotalPrice] = useState(0);
 
     /*----- Các hàm tương tác danh sách product và cart -----*/
     const addProductToCart = (id) => {
@@ -86,9 +87,14 @@ const ShoppingCart = () => {
     },[])
     /*---- ----------*/
     useEffect(()=> {
-        
-
-    }, [products, cart])
+        if (cart && cart.length > 0) {
+            let rs = 0
+            cart.forEach((item) => {
+                rs += (item.price * item.amount);
+            })
+            setTotalPrice(rs);
+        }
+    }, [cart])
 
     return (
         <div className="shopping-cart-wrapper">
@@ -107,7 +113,7 @@ const ShoppingCart = () => {
                 <div className="logo"><div></div></div>
                 <div className="title" id='title-cart'>
                     <span>Your Cart</span>
-                    <span>$0.00</span>
+                    <span>{totalPrice.toLocaleString('en-US', { style: 'currency', currency: 'USD' })}</span>
                 </div>
                 <div className="body">
                     {cart.length === 0 && <>Your cart is empty.</>}

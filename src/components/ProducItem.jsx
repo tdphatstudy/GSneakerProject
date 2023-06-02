@@ -11,7 +11,7 @@ const ProductItem = ({item, addItemCallback}) => {
             <div className="product-description">{item.description}</div>
         
         <div className="func-wrapper">
-            <div className="product-price">${item.price}</div>
+            <div className="product-price">{item.price.toLocaleString('en-US', { style: 'currency', currency: 'USD' })}</div>
             {item.on_cart === true &&  <div className="product-added"></div>}
             {item.on_cart === false &&  <div className="product-add" onClick={()=>{addItemCallback(item.id)}}>ADD TO CART</div>}
            
