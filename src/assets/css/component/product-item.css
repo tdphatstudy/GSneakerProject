@@ -42,12 +42,23 @@
     font-weight: bold;
 }
 
-.product-item-wrapper > .func-wrapper > .product-add {
+.product-item-wrapper > .func-wrapper > .product-add  {
     font-size: 16px;
+    font-weight: bold;
     background-color: #f6c90e;
     padding: 15px 20px;
     border-radius: 25px;
     cursor: pointer;
+}
+.product-item-wrapper > .func-wrapper > .product-added  {
+    width: 50px;
+    height: 50px;
+    border-radius: 100rem;
+    background-color: #f6c90e;
+    background-image: url('../../img/check.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 25px 25px;
 }
 .product-item-wrapper > .func-wrapper > .product-add:hover {
     box-shadow: -5px -5px 10px -10px #303841;

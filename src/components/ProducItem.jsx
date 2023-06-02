@@ -12,7 +12,9 @@ const ProductItem = ({item}) => {
         
         <div className="func-wrapper">
             <div className="product-price">${item.price}</div>
-            <div className="product-add">ADD TO CART</div>
+            {item.on_cart === true &&  <div className="product-added"></div>}
+            {item.on_cart === false &&  <div className="product-add">ADD TO CART</div>}
+           
         </div>
         </div>
     );
