@@ -1,70 +1,41 @@
-# Getting Started with Create React App
+# G SNEAKER WEBAPP
+Đây là ứng dụng web shopping cart đơn giản, với các chức năng cơ bản: thêm product vào giỏ hàng, chỉnh sửa số lượng item, xóa item khỏi cart.
+## URL Vercel: https://g-sneaker-project-jb68z8kat-tdphatstudy.vercel.app/
+![image](https://github.com/tdphatstudy/GSneakerProject/assets/124871402/925f9fa5-063b-4ba7-b165-0a4ee8127492)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Các tính năng
+- [x] Hiển thị thông tin sản phẩm: tên, mô tả, giá, hình ảnh và nút `Add To Cart`.
+- [x]  Thêm sản phẩm vào giỏ khi nhấn nút `Add To Cart`.
+- [x]  Chặn người dùng thêm các sản phẩm đã nằm trong giỏ hàng.
+- [x] Hiển thị thông item trong giỏ hàng
+- [x] Thêm bớt số lượng sản phẩm của item (Xóa khi số lượng về 0), xóa item.
+- [x] Lưu thông tin sản phẩm vào vào local.
+- [x] Chuyển đến trang 404 nếu url không hợp lệ. 
+- [x] Responsive (80%) 
+- [x] Animation   
+- [x] Upload source lên vercal ( Do heruko không còn miễn phí)/
 
-## Available Scripts
+# Các phiên bản
+Việc run  hoặc build với các phiên bản khác có thể gây ra lỗi. Nếu quá trình cài đặt có lỗi hãy thiết lập lại để phù hợp.
+ - NODEJS : v18.13.0.
+ - REACTJS: 18.2.0.
+# Cài đặt ở local và chạy
+ - Bước 1: Cần có `git` để thực hiện. [URL: https://git-scm.com/downloads]
 
-In the project directory, you can run:
+![image](https://github.com/tdphatstudy/GSneakerProject/assets/124871402/a73db8ed-0a56-4b2d-abb1-7586530cdeff)
 
-### `npm start`
+ - Bước 2: Đến nên muốn chứa repo.
+ - Bước 3: Dùng lệnh `git clone "https://github.com/tdphatstudy/GSneakerProject.git"`
+ - Bước 4: Gõ lệnh `npm install`. Vì để push code nhanh hơn nên thường, chúng ta không push hết code trong project. Mà sẽ bỏ qua `/node_module` chứa các dependecy của project. Vậy khi clone code về hãy gõ lệnh `npm install` để `npm` sẽ check và tải về các dependency còn thiếu so với các khai báo mà chúng ta để trong package.json.
+ - Bước 5: Gõ `npm start` để chạy. (mặc định port: 3000)
+ - ![image](https://github.com/tdphatstudy/GSneakerProject/assets/124871402/6c011544-e76a-4c06-96e4-0b6973fcf838)
+![image](https://github.com/tdphatstudy/GSneakerProject/assets/124871402/09b83024-43a6-496d-8951-f82851f83dcd)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+# Các đưa code lên vercel thông qua github của người dùng.
+ - Bước 1: Tạo 1 repo trên github.
+ - Bước 2: Vào project vừa clone xuống.
+ - Bước 3: Sao đó gõ `git remote add <remote name: origin/ hoặc tên tùy ý>  <URL repo của bạn>`.
+ - Bước 4: `git push -u <remote name đã đặt ở trên> <branch name>`
+ - Bước 5: Try cập `vercel.com`
+ - Bước 6: Đăng nhập bằng github.
+ - Bước 7: Chọn repo muốn publish và chờ. Nhận được url là đã thành công.
