@@ -1,7 +1,7 @@
 import '../assets/css/component/product-item.css'
 import { useRef } from 'react';
 
-const ProductItem = ({item}) => {
+const ProductItem = ({item, addItemCallback}) => {
     return (
         <div className="product-item-wrapper">
             <div className="background" style={{'backgroundColor': item.color}}>
@@ -13,7 +13,7 @@ const ProductItem = ({item}) => {
         <div className="func-wrapper">
             <div className="product-price">${item.price}</div>
             {item.on_cart === true &&  <div className="product-added"></div>}
-            {item.on_cart === false &&  <div className="product-add">ADD TO CART</div>}
+            {item.on_cart === false &&  <div className="product-add" onClick={()=>{addItemCallback(item.id)}}>ADD TO CART</div>}
            
         </div>
         </div>
