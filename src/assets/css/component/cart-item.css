@@ -1,0 +1,85 @@
+.cart-item-wrapper {
+    display: flex;
+    width: 100%;
+    box-sizing: border-box;
+}
+.cart-item-wrapper > .background-wrapper {
+    width: 30%;
+}
+.cart-item-wrapper > .background-wrapper > .background {
+    height: 85px;
+    width:  85px;
+    background-color: #e1e7ed;
+    display: flex;
+    align-items: center;
+    border-radius: 100%;
+    justify-content: center;
+}
+.cart-item-wrapper > .background-wrapper > .background > .item-image {
+    width: 130%;
+    transform: rotate(-36deg);
+}
+.cart-item-wrapper > .body {
+    display: flex;
+    flex-direction: column;
+    margin-left: 25px;
+    width: 70%;
+}
+
+.cart-item-wrapper > .body > .item-name {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.cart-item-wrapper > .body > .item-price {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.cart-item-wrapper > .body > .item-func-wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.cart-item-wrapper > .body > .item-func-wrapper > .amount-func {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 50%;
+}
+
+.cart-item-wrapper > .body > .item-func-wrapper > .amount-func > .minus {
+    width: 25px;
+    height: 25px;
+    border-radius: 100%;
+    background-color: #ededed;
+    background-image: url('../../img/minus.png');
+    background-position: center;
+    background-size: 10px 10px;
+    background-repeat: no-repeat;
+}
+.cart-item-wrapper > .body > .item-func-wrapper > .amount-func > .plus {
+    width: 25px;
+    height: 25px;
+    border-radius: 100%;
+    background-color: #ededed;
+    background-image: url('../../img/plus.png');
+    background-position: center;
+    background-size: 10px 10px;
+    background-repeat: no-repeat;
+}
+.cart-item-wrapper > .body > .item-func-wrapper > .remove-func {
+    width: 25px;
+    height: 25px;
+    border-radius: 100%;
+    background-color: #f6c90e;
+    background-image: url('../../img/trash.png');
+    background-position: center;
+    background-size: 15px 15px;
+    background-repeat: no-repeat;
+}
+
+
+
+

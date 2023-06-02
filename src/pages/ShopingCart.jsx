@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import '../assets/css/page/shoppingcart.css';
 import dummyData from '../assets/shoes.json'
 import ProductItem from '../components/ProducItem';
+import CartItem from '../components/CartItem';
 
 const ShoppingCart = () => {
     const [products, setProducts] = useState(dummyData.shoes);
@@ -52,7 +53,8 @@ const ShoppingCart = () => {
                     <span>$0.00</span>
                 </div>
                 <div className="body">
-                    
+                    {/*cart.length === 0 && <>Your cart is empty.</>*/}
+                    <CartItem />
                 </div>
             </div>
         </div>
